@@ -1,0 +1,246 @@
+/* General Styles */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.search-bar input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+}
+
+.submit-button {
+    display: none; /* Menyembunyikan tombol submit */
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+.btn {
+    padding: 10px 20px;
+    background-color: #e60023;
+    color:  #f3f3f3;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #d4001f;
+    color: white;
+}
+
+/* Grid Layout */
+.grid-container {
+    column-count: 4;
+    column-gap: 10px;
+    padding: 20px;
+}
+
+.grid-item {
+    margin-bottom: 10px;
+    break-inside: avoid;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+    transform: scale(1.05);
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.description1 {
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 1200px) {
+    .grid-container {
+        column-count: 3;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .grid-container {
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid-container {
+        column-count: 1;
+    }
+}
+
+/* Upload Page */
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.upload-input {
+    display: none;
+}
+
+.upload-label {
+    padding: 10px 20px;
+    background-color: #e60023;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+#fileName {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.upload-label:hover {
+    background-color: #d4001f;
+}
+
+.upload-name, .upload-description {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.upload-description {
+    height: 100px;
+    resize: none;
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    position: relative;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.scrollToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color:#ff00003d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s, opacity 0.3s;
+    
+}
+
+.scrollToTop:hover {
+    background-color: #e60023;
+    opacity : 0.3s;
+}
+
+
+
+
+/* Gambar dalam mode layar penuh */
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.fullscreen img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Kelas untuk menampilkan gambar */
+.hidden {
+    display: none;
+}
+
+
+
+
+
